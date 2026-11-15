@@ -69,7 +69,7 @@ Follow these steps to run the portfolio locally.
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ajit-bedwal-portfolio.git
+git clone https://github.com/Ajit041/ajit-bedwal-portfolio.git
 ```
 
 **2. Navigate to the project directory**
