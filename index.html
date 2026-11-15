@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajit Bedwal — Python &amp; AI Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Ajit Bedwal — Computer Engineering student and Python developer focused on AI, automation and embedded systems. Creator of Jarvis AI and Pure Planting." />
+  <meta name="author" content="Ajit Bhagwan Bedwal" />
+  <meta name="theme-color" content="#05060f" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ajit Bedwal — Python & AI Developer" />
+  <meta property="og:description" content="Computer Engineering student building intelligent software — from desktop AI assistants to embedded hardware automation." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Flag JS availability early so content is never hidden when JavaScript is disabled -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#home">Skip to main content</a>
+
+  <!-- ===== SVG ICON SPRITE ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5.5 5.5 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+    <symbol id="i-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"/><path d="M5 3v4"/><path d="M19 17v4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
+    <symbol id="i-git" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  </svg>
+
+  <!-- ===== PRELOADER (has a pure-CSS safety fade-out) ===== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-mark">AB</div>
+    <div class="pre-bar"><span></span></div>
+  </div>
+
+  <!-- ===== BACKGROUND LAYERS ===== -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Custom cursor (desktop, fine pointers only) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar" class="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="brand" aria-label="Ajit Bedwal — back to top">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span class="brand-name">Ajit&nbsp;Bedwal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#journey">Journey</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="assets/resume/Ajit_Bedwal_Resume.pdf" download="Ajit_Bedwal_Resume.pdf" class="btn btn-ghost btn-sm nav-resume magnetic" data-cursor>
+        <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Resume
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div id="drawer-overlay" class="drawer-overlay" hidden></div>
+  <aside id="drawer" class="drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="brand-mark" aria-hidden="true">AB</span>
+      <button id="drawer-close" class="drawer-close" aria-label="Close menu"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul class="drawer-links">
+        <li><a class="drawer-link" href="#home"><em>00</em>Home</a></li>
+        <li><a class="drawer-link" href="#about"><em>01</em>About</a></li>
+        <li><a class="drawer-link" href="#education"><em>02</em>Education</a></li>
+        <li><a class="drawer-link" href="#skills"><em>03</em>Skills</a></li>
+        <li><a class="drawer-link" href="#projects"><em>04</em>Projects</a></li>
+        <li><a class="drawer-link" href="#experience"><em>05</em>Experience</a></li>
+        <li><a class="drawer-link" href="#achievements"><em>06</em>Achievements</a></li>
+        <li><a class="drawer-link" href="#journey"><em>07</em>Journey</a></li>
+        <li><a class="drawer-link" href="#interests"><em>08</em>Interests</a></li>
+        <li><a class="drawer-link" href="#contact"><em>10</em>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-socials" data-socials></div>
+  </aside>
+
+  <main id="main">
+    <!-- ============ MODULE 1 · HERO ============ -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-badge reveal"><span class="pulse-dot" aria-hidden="true"></span> Open to internships &amp; fresher opportunities</p>
+          <p class="hero-eyebrow mono reveal">// Hello, World! I'm</p>
+          <h1 class="hero-name reveal">Ajit <span class="grad-text">Bedwal</span></h1>
+          <p class="hero-role reveal">I'm a <span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="hero-intro reveal">
+            A Computer Engineering student at ISBM College of Engineering, Pune, who loves building software that does
+            real work — from a voice-controlled desktop AI assistant to Python code that brings robotic kits and
+            ESP32 hardware to life.
+          </p>
+          <div class="hero-ctas reveal">
+            <a href="#projects" class="btn btn-primary magnetic" data-cursor>
+              Explore My Work <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a href="assets/resume/Ajit_Bedwal_Resume.pdf" download="Ajit_Bedwal_Resume.pdf" class="btn btn-ghost magnetic" data-cursor>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download Resume
+            </a>
+            <a href="#contact" class="btn-link" data-cursor>Let's Connect <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+          <div class="hero-socials reveal" data-socials></div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit-wrap">
+            <div class="orbit-ring"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="monogram">AB</div>
+            <span class="orbit-chip chip-1 mono">Python</span>
+            <span class="orbit-chip chip-2 mono">AI</span>
+            <span class="orbit-chip chip-3 mono">ESP32</span>
+            <span class="orbit-chip chip-4 mono">JS</span>
+          </div>
+          <div class="terminal glass">
+            <div class="term-bar"><span></span><span></span><span></span><em class="mono">jarvis — zsh</em></div>
+            <div id="term-body" class="term-body mono"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to the About section">
+        <span class="mouse" aria-hidden="true"><span class="wheel"></span></span>
+        <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ MODULE 2 · ABOUT ============ -->
+    <section id="about" class="section" aria-label="About me">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>01</b> · About Me</span>
+          <h2 class="section-title">Engineering with curiosity,<br /><span class="grad-text">building with purpose</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <aside class="about-card glass reveal" data-tilt>
+            <div class="about-avatar" aria-hidden="true"><span>AB</span></div>
+            <h3 class="about-name">Ajit Bhagwan Bedwal</h3>
+            <p class="about-role mono">Python &amp; AI Developer</p>
+            <ul class="about-facts">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-grad"/></svg><div><b>Studying</b><span>B.Tech Computer Engineering, ISBM COE Pune</span></div></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><b>Based in</b><span>Pune, Maharashtra, India</span></div></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><div><b>Experience</b><span>Software Developer Intern @ Insclupt Technologies</span></div></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><div><b>Focus</b><span>Python · AI · Automation · Embedded systems</span></div></li>
+            </ul>
+          </aside>
+
+          <div class="about-body">
+            <p class="reveal">
+              I'm <b>Ajit Bhagwan Bedwal</b> — a Computer Engineering student at <b>ISBM College of Engineering, Pune</b>.
+              My path ran from Saint Monica School in Vaijapur, through a Diploma in Computer Engineering at
+              <b>MIT Polytechnic, Rotegaon</b> (84.74%), into my B.Tech (Sep 2024 – present). At every step, one thing
+              stayed constant: I learn technology best by building things with it.
+            </p>
+            <p class="reveal">
+              What genuinely excites me is the moment an idea starts <em>working</em> — a desktop assistant that answers
+              spoken commands, sensors wired into an ESP32 that behave exactly as the Python code expects, a farming
+              platform that puts useful knowledge in a farmer's hands. I'm passionate about
+              <b>Python and software development</b>, and I gravitate towards work where software meets hardware.
+            </p>
+            <p class="reveal">
+              I care about building things that are <b>private, reliable and genuinely useful</b>: Jarvis AI processes
+              tasks locally by design, and Pure Planting was built to make organic-farming knowledge easy to reach.
+              Hackathons, poster presentations and constant exploration of new tools keep me growing.
+            </p>
+
+            <div class="about-values reveal" data-stagger>
+              <span class="chip">Privacy-first engineering</span>
+              <span class="chip">Hands-on learning</span>
+              <span class="chip">Real-world impact</span>
+              <span class="chip">Consistent growth</span>
+            </div>
+
+            <blockquote class="about-quote glass reveal">
+              <svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>
+              <p><b>What makes me different:</b> I'm equally at home writing Python for a Gemini-powered assistant as I am
+              wiring sensors into an ESP32 and debugging the link between them. Software and hardware — end to end.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 3 · EDUCATION ============ -->
+    <section id="education" class="section" aria-label="Education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>02</b> · Education</span>
+          <h2 class="section-title">My <span class="grad-text">academic journey</span></h2>
+          <p class="section-sub">From a school bench in Vaijapur to an engineering campus in Pune — every stage built on the last.</p>
+        </div>
+        <div id="education-track" class="edu-timeline" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 4 · SKILLS ============ -->
+    <section id="skills" class="section" aria-label="Technical skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>03</b> · Skills</span>
+          <h2 class="section-title">Tools I <span class="grad-text">work with</span></h2>
+          <p class="section-sub">Grouped by what I actually use them for — every tag below comes from real coursework, projects or internship work.</p>
+        </div>
+        <div id="skills-grid" class="skills-grid" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 5 · PROJECTS ============ -->
+    <section id="projects" class="section" aria-label="Featured projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>04</b> · Featured Projects</span>
+          <h2 class="section-title">Things I've <span class="grad-text">built</span></h2>
+          <p class="section-sub">Each project below solved a real problem I cared about — open a case study to see the full story.</p>
+        </div>
+
+        <div id="filter-bar" class="filter-bar reveal" role="group" aria-label="Filter projects by category"><!-- rendered by JS --></div>
+        <div id="projects-grid" class="projects-grid" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 6 · EXPERIENCE ============ -->
+    <section id="experience" class="section" aria-label="Internship and experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>05</b> · Experience</span>
+          <h2 class="section-title">Real-world <span class="grad-text">engineering</span></h2>
+          <p class="section-sub">Hands-on industry experience — clearly marked internships, honestly described contributions.</p>
+        </div>
+        <div id="experience-track" class="xp-track" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 7 · ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section" aria-label="Achievements and certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>06</b> · Achievements</span>
+          <h2 class="section-title">Moments I'm <span class="grad-text">proud of</span></h2>
+        </div>
+        <div id="achievements-grid" class="ach-grid" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 8 · JOURNEY & GOALS ============ -->
+    <section id="journey" class="section" aria-label="Learning journey and career goals">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>07</b> · Learning Journey &amp; Goals</span>
+          <h2 class="section-title">The road <span class="grad-text">ahead</span></h2>
+          <p class="section-sub">Where I've been, what I'm learning right now, and the direction I'm heading.</p>
+        </div>
+        <div id="journey-track" class="journey-track" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 9 · INTERESTS ============ -->
+    <section id="interests" class="section" aria-label="Hobbies and interests">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>08</b> · Beyond the Code</span>
+          <h2 class="section-title">Hobbies &amp; <span class="grad-text">interests</span></h2>
+        </div>
+        <div id="interests-grid" class="interests-grid" data-stagger><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 10 · RESUME ============ -->
+    <section id="resume" class="section" aria-label="Resume download">
+      <div class="container">
+        <div class="resume-band glass reveal" data-tilt>
+          <div class="resume-icon" aria-hidden="true"><svg class="icon"><use href="#i-file-text"/></svg></div>
+          <div class="resume-copy">
+            <h2>Grab my <span class="grad-text">resume</span></h2>
+            <p>One page, all the essentials — education, internship experience, projects and achievements.</p>
+            <div class="resume-chips" data-stagger>
+              <span class="chip">Education</span>
+              <span class="chip">Internship @ Insclupt Technologies</span>
+              <span class="chip">2 projects</span>
+              <span class="chip">Hackathons &amp; awards</span>
+            </div>
+          </div>
+          <div class="resume-actions">
+            <a href="assets/resume/Ajit_Bedwal_Resume.pdf" download="Ajit_Bedwal_Resume.pdf" class="btn btn-primary magnetic" data-cursor>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download PDF
+            </a>
+            <a href="assets/resume/Ajit_Bedwal_Resume.pdf" target="_blank" rel="noopener" class="btn-link" data-cursor>
+              Open in new tab <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 11 · CONTACT ============ -->
+    <section id="contact" class="section" aria-label="Contact me">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag mono"><b>10</b> · Contact</span>
+          <h2 class="section-title">Let's build something <span class="grad-text">together</span></h2>
+          <p class="section-sub">Internships, collaborations, or just a conversation about Python, AI or embedded systems — my inbox is open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="reveal">Whether you have an opportunity, a project idea, or a question about my work — I'd love to hear from you. I usually reply within a day.</p>
+
+            <div class="contact-cards" data-stagger>
+              <a class="contact-card glass" href="mailto:bedwal.ajit1@gmail.com" data-cursor>
+                <span class="contact-ico"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <span class="contact-txt"><b>Email</b><span>bedwal.ajit1@gmail.com</span></span>
+                <button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address to clipboard" title="Copy email"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
+              </a>
+              <a class="contact-card glass" href="tel:+919529288050" data-cursor>
+                <span class="contact-ico"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <span class="contact-txt"><b>Phone</b><span>+91 95292 88050</span></span>
+              </a>
+              <a class="contact-card glass" href="https://www.linkedin.com/in/ajit-bedwal" target="_blank" rel="noopener" data-cursor>
+                <span class="contact-ico"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+                <span class="contact-txt"><b>LinkedIn</b><span>in/ajit-bedwal</span></span>
+                <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+              <div class="contact-card glass">
+                <span class="contact-ico"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <span class="contact-txt"><b>Location</b><span>Pune, Maharashtra, India</span></span>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form glass reveal" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Recruiter" />
+              <small class="err" data-err="name" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" />
+              <small class="err" data-err="email" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" placeholder="Internship opportunity" />
+              <small class="err" data-err="subject" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Hi Ajit, I came across your portfolio and…"></textarea>
+              <small class="err" data-err="message" aria-live="polite"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block magnetic" data-cursor>
+              Send Message <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>
+            </button>
+            <p class="form-note">No message is stored on this site — submitting opens your email app with everything pre-filled, so you stay in control.</p>
+            <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              Your email app should have opened with the message ready to send. If it didn't, just email me directly at
+              <a href="mailto:bedwal.ajit1@gmail.com">bedwal.ajit1@gmail.com</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ MODULE 12 · FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" aria-label="Back to top">
+          <span class="brand-mark" aria-hidden="true">AB</span>
+          <span class="brand-name">Ajit&nbsp;Bedwal</span>
+        </a>
+        <p>Python &amp; AI developer who enjoys the full journey from idea to working product — software and hardware included.</p>
+        <div class="footer-socials" data-socials></div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Say hello</h3>
+        <ul>
+          <li><a href="mailto:bedwal.ajit1@gmail.com">bedwal.ajit1@gmail.com</a></li>
+          <li><a href="tel:+919529288050">+91 95292 88050</a></li>
+          <li><a href="https://www.linkedin.com/in/ajit-bedwal" target="_blank" rel="noopener">linkedin.com/in/ajit-bedwal</a></li>
+          <li>Pune, Maharashtra, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>© <span id="year">2026</span> Ajit Bhagwan Bedwal. All rights reserved.</p>
+        <p class="mono">Designed &amp; built from scratch — HTML · CSS · Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <!-- Project modal -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close" aria-label="Close project details"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <div id="modal-content"><!-- rendered by JS --></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <style>.reveal{opacity:1 !important;transform:none !important}#preloader{display:none}</style>
+    <p style="text-align:center;padding:12px;background:#141930;color:#a7b0c8;font-family:sans-serif">Some interactive parts of this page (project case studies, the contact form) need JavaScript — please enable it, or reach me at bedwal.ajit1@gmail.com.</p>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
